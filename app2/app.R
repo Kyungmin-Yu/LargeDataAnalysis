@@ -4,7 +4,7 @@ library(tidyverse)
 library(lubridate)
 # setwd("C:/Users/ykm25/Desktop/대용량자료관리및시각화/project/shiny/gu")
 traffic = fread('traffic.csv') 
-rain = fread('강수량.csv') %>% mutate(date = ymd(date))
+rain = fread('rain.csv') %>% mutate(date = ymd(date))
 accident = fread('accident.csv')
 
 ui = fluidPage(
